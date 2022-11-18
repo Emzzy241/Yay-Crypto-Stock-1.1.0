@@ -55,7 +55,7 @@ dom.watch();
 
 
 import mineCrypto from "./assets/images/cryptoMine.jpg";
-import sandPImage from "./assets/images/sandP500.png";
+
 import btcImage from "./assets/images/btcImage.png";
 import myOfferImg from "./assets/images/cryptoOffer.png";
 import stockOffer from "./assets/images/stockOffers.png";
@@ -81,7 +81,7 @@ import pcFour from "./assets/images/pic-4.png";
 import tethImg from "./assets/images/teth.png";
 import doge from "./assets/images/dg.svg";
 import ripple from "./assets/images/ripp2.png";
-
+import jsBadgeImg from "./assets/images/js-badge.svg";
 
 
 
@@ -173,7 +173,9 @@ $(document).ready(function () {
     let dogeImg = $(".dgCoin");
     dogeImg.attr("src", doge);
 
-
+    // for the top image in app
+    let topImg = $(".appImg");
+    topImg.attr("href", jsBadgeImg);
 
 
 

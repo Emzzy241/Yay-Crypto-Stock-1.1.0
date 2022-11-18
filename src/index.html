@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YayCryptoStock</title>
+    <!-- linking font awesome icons NO links should be here at all, just import font awesome like the way you want to import swiper in main.js file -->
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-infinity"></i>YayCryptoStock</a>
+
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#crypto">crypto</a>
+            <a href="#crypto">stock</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart">a</a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+
+    <!-- Home section starts  -->
+
+    <section id="home" class="home">
+        <div class="swiper mySwiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our crypto offer</span>
+                        <h3>Bitcoin Mining</h3>
+                        <p>
+                            Bitcoin is a decentralized digital currency without a central Bank or single administrator
+                            that can be sent to your friends and family all over the world
+                        </p>
+                        <a href="#" class="btn">start now</a>
+                    </div>
+                    <div class="img">
+                        <img src="" alt="" class="imgBTC">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our crypto offer</span>
+                        <h3>Crypto Analytics</h3>
+                        <p>
+                            With our amazing Crypto Algorithm you can get the price of any crypto that's on the Market
+                            in less than 10 seconds
+                            on YayCryptoStock's webpage
+                        </p>
+                        <a href="#" class="btn">start now</a>
+                    </div>
+                    <div class="img">
+                        <img src="" alt="" class="offer">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Learn about Trade</span>
+                        <h3>market Analytics</h3>
+                        <p>
+                            Wanna know the current prices of some stocks? or cryptos Look no further you are already at
+                            the right
+                            place. We have many Stocks to sell to you
+                            and you can also check prices of stocks in the stock market
+                        </p>
+                        <a href="#" class="btn">start now</a>
+                    </div>
+                    <div class="img">
+                        <img src="" alt="" class="imgStock">
+                    </div>
+                </div>
+
+
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Own an IPO or an ICO</span>
+                        <h3>Get Crypto's</h3>
+                        <p>
+                            There are a lot of companies you've probably heard of on the stock exchange and today via
+                            our platform you can easily be an investot in a company stock
+                        </p>
+                        <a href="#" class="btn">start now</a>
+                    </div>
+                    <div class="img">
+                        <img src="" alt="" class="secu">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our outstanding Buying Offers</span>
+                        <h3>buy cryptos </h3>
+                        <p>
+                            both the crypto market and the stock market have times without number made people's pocket
+                            full, you can invest now on
+                            the YayCryptoStock website
+                        </p>
+                        <a href="#" class="btn">start now</a>
+                    </div>
+                    <div class="img">
+                        <img src="" alt="" class="tsla">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+
+
+    <!-- Home section ends -->
+
+    <!-- crypto section starts -->
+
+    <!-- thanks to api, I am able to get all the accurate prices I want -->
+
+    <section id="crypto" class="crypto">
+        <h3 class="sub-heading">Our cryptos and stocks</h3>
+        <h3 class="heading">Popular cryptos</h3>
+
+        <!-- bitcoin -->
+        <div class="box-container">
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="imgBTC">
+                <h3 class="apiCall-BTCName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-BTC"></span>
+                <span class="apiCall-btctoNaira"> </span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+            <!-- ethereum coin -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="eth">
+                <h3 class="apiCall-ETHName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-ETH"></span>
+                <span class="apiCall-ethToNaira"> </span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+            <!-- tether coin -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="tethCoin">
+                <h3 class="apiCall-tethName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-tethCoin"></span>
+                <span class="apiCall-tethToNaira"> </span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+            <!-- ripple coin -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="rippCoin">
+                <h3 class="apiCall-rippCoinName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-ripple"></span>
+                <span class="apiCall-rippletoNaira"> </span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+
+            <!-- Binance Coin -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="bnc">
+                <h3 class="apiCall-BinanceCoinName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-BinanceCoin"></span>
+                <span class="apiCall-BnctoNaira"></span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+
+            <!--    Doge Coin  -->
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="" alt="" class="dgCoin">
+                <h3 class="apiCall-dgCoinName"></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="apiCall-dgCoin"></span>
+                <span class="apiCall-dgCointoNaira"></span>
+                <a href="#" class="btn">buy now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- crypto section ends -->
+
+    <!-- crypto search section starts -->
+
+    <section id="about" class="about">
+        <h3 class="sub-heading">Didn't find your desired crypto?</h3>
+        <h3 class="heading">Search Now</h3>
+
+        <div class="row">
+            <div class="searching-crypto img">
+                <form action="" class="searching">
+                    <label for="cryp">Enter the crypto name you want to search for</label>
+                    <input id="cryp" type="text" class="form-control" placeholder="please enter the crypto's ticker symbol e.g: btc, xrp">
+
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+
+            <div class="content">
+                <h4>Wait a little while and You get your Search Result right here</h4>
+
+                <h3 class="content-name"></h3>
+                <p class="content-id"></p>
+                <p class="content-marketcapRank"></p>
+                <p class="content-symbol"></p>
+                
+            </div>
+        </div>
+
+    </section>
+
+    <!-- crypto search section ends -->
+
+
+    <!-- about section starts -->
+
+    <section id="about" class="about">
+        <h3 class="sub-heading">About us</h3>
+        <h3 class="heading">why choose us?</h3>
+
+        <div class="row">
+            <div class="img">
+                <!-- secure cryptocurrency.png image is here -->
+                <img src="" class="secu" alt="">
+            </div>
+
+            <div class="content">
+                <h3>best security in the crypto world</h3>
+                <p>
+                    understanding how secure your payment is made a really great thing our Team @YayCryptoStock does and
+                    this is because it is only when our customers understand what's going on with their money then they
+                    give us their trust. We put trust first before anything in how we interact with our Customers
+                </p>
+                <p>
+                    When you buy crypto or stocks from us you get to track when you ordered, how you ordered, and when
+                    will your purchase be finalized; You will get a minute update till your purchase is finalized
+                </p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-user-secret"></i>
+                        <span>free security</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts -->
+
+    <section id="menu" class="menu">
+
+        <h3 class="sub-heading">What we offer</h3>
+        <h3 class="heading">today's special</h3>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <!-- crypto currency mining server image here -->
+                    <img src="" alt="" class="mine">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>cryptocurrency Mining Server</h3>
+                        <p>Our Crypto Mining team is always there to the rescue when you feel a specific cryptocurrency
+                            is about to rise in its value.
+                            and also they're always on standby when you want to sell
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- crypto currency exchange image here -->
+                    <img src="" alt="" class="exc">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>cryptocurrency Exchange</h3>
+                        <p>As a customer you might be needing some extra information about how crypto exchanges work,
+                            for that you can check this service out today and you won't regret it. The course is
+                            available at a cheap price today but might not be cheap tomorrow</p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$12.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- an stock image here -->
+                    <img src="" alt="" class="stex">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>The stock Exchange</h3>
+                        <p>Whenever people here the word "stock exchange" they think in the direction of wall street.
+                            @YayCryptoStock we bring the wall stree
+                            feeling straight to your abode. Learn more about stocks today by making a purchase of the
+                            stock Learn 101
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$32.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- an stock image here -->
+                    <img src="" alt="" class="tsla">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Own a Company Today!</h3>
+                        <p>As we have always said, our team YayCryptoStockbrings wall street right to your home, there
+                            is no better time investing than today
+                            and with our service guidiance you would thrive in the stock market without a single doubt
+                            in our minds
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$62.99</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- crypto wallet image here -->
+                    <img src="" alt="" class="wallet">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>cryptocurrency wallet </h3>
+                        <p>Often times Customers don't always seek more knowledge on the kind of wallet they own and
+                            make transactions with and that is why our Team came up with the perfect guide that briefs
+                            you on the status of your cryptocurrency wallets
+
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$16.59</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- crypto course image here -->
+                    <img src="" alt="" class="cour">
+                    <a href="#" class="fas fa-heart">a</a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>cryptocurrency courses</h3>
+                        <p>Our amazing team of sales people gave us the idea of actually teaching peoplewhat crypto is
+                            and how to become an investor in it and that is why we would love to make you familiar with
+                            the crypto world via our courses
+
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$26.33</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- stock courses image here -->
+                    <img src="" alt="" class="cs">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Stock courses</h3>
+                        <p>
+                            The greatest time one can learn about stocks is now, with many people saying the stock
+                            market leads to a great long lasting financial freedom, there is no better time to start
+                            learning than now. With a course, you can get started
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$33.39</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- stock courses image here -->
+                    <img src="" alt="" class="bot">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Trading Bots</h3>
+                        <p>
+                            Are you still feeling a little bit overwhelmed by the trade market, be it in crypto or in
+                            stocks?? you can hire a trading bot to do that job. All you have to do is tell your bot what
+                            you expect from it in simple English terms
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$33.39</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <!-- stock courses image here -->
+                    <img src="" alt="" class="imgStock">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Learn how TO trade 111</h3>
+                        <p>
+                            The greatest time one can learn about stock world or the crypto world is now, with many
+                            people saying the trade
+                            market leads to a great long lasting financial freedom, there is no better time to start
+                            learning than now, Learn to trade now
+                        </p>
+                        <a href="#" class="btn">add to service</a>
+                        <span class="price">$33.39</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- review section starts -->
+
+    <section id="review" class="review">
+        <h3 class="sub-heading">customer's review</h3>
+        <h3 class="heading">what they say</h3>
+
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <!-- a customer's image here -->
+                        <img src="" class="pc1" alt="">
+                        <div class="user-info">
+                            <h3>Emmanuel Sanders</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The name of the company was really funny when I first saw them on Twitter, I thought it was just
+                        some kind of meme but I gave it a try, I purchased a stock from them and I had a great user
+                        experience</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <!-- a customer's image here -->
+                        <img src="" class="pc2" alt="">
+                        <div class="user-info">
+                            <h3>Victoria Imany</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Investing has always been my one goal, I have been a fan of Bitcoin for a very long long time.
+                        Having a platform like this is just absolutely great as it makes me able to buy stocks and
+                        cryptos extremely easy</p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <!-- a customer's image here -->
+                        <img src="" class="pc3" alt="">
+                        <div class="user-info">
+                            <h3>Zeus Vinny</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>As a person who has been in the investor's world for a while, investing is stocks is a real great
+                        way to go in the world of investing in general, and thanks to YayCryptoStock guys I bought my
+                        first crypto </p>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <!-- a customer's image here -->
+                        <img src="" class="imgBTC alt="">
+                        <div class=" user-info">
+                        <h3>Dean McMann</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Not a big fan of the stock market though but my husband loves the idea of
+                    stocks, but I don't. I first heard about the idea of the Ethereum coin when it came out,
+                    Thankfully I bought it when it was pretty low</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <!-- a customer's image here -->
+                    <img src="" class="pc4" alt="">
+                    <div class="user-info">
+                        <h3>Ebuka Samuel</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Who would believe a great Company like this runs in the Federal republic of nigeria? absolutely
+                    no one nobody but it does; I so love the customer support guys as they were very friendly with
+                    me </p>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- review section ends -->
+
+    <!-- Footer section starts -->
+
+    <section id="footer" class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>location</h3>
+                <a href="#">NGN</a>
+                <a href="#">USA</a>
+                <a href="#">UAE</a>
+                <a href="#">India</a>
+                <a href="#">Kenya</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">crypto</a>
+                <a href="#">about</a>
+                <a href="#">services</a>
+                <a href="#">review</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="tel:09012857304">+234-901-285-7304</a>
+                <a href="tel:09012857304">+234-901-285-7304</a>
+                <a href="sms:08115993636">+234-811-599-3636</a>
+                <a href="mailto:emzzyoluwole@gmail.com">emzzyoluwole@gmail.com</a>
+                <a href="#Lagos, Nigeria - 112107"></a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">meta</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+                <a href="mailto:emzzyoluwole@gmail.com">emzzyoluwole@gmail.com</a>
+            </div>
+        </div>
+        <div class="credit">copyright @ 2022 by <span>Mojiboye Emmanuel Oluwole(AgencyName: DesignitAgency)</span></div>
+    </section>
+
+    <!-- Footer section ends -->
+
+</body>
+
+</html>

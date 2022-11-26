@@ -5,9 +5,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 // importing my CurrencyConvertService and my CryptoService class
-import { CurrencyConvertService } from "./app-service.js";
-import { CryptoService } from './app-service.js';
-import { SearchFeature } from './app-service.js';
+import { CurrencyConvertService, CryptoService, SearchFeature } from "./app-service.js";
 
 
 // import Swiper bundle with all modules installed
@@ -195,7 +193,7 @@ $(document).ready(function () {
 
 
 
-    // for the swiper
+    // for the home slider swiper
 
     var swiper = new Swiper(".home-slider", {
         spaceBetween: 30,
@@ -241,20 +239,21 @@ $(document).ready(function () {
 
     // working with api calls now
 
-    let myConverterPromise = CurrencyConvertService.convertCurrencytToNaira();
-
-
+    
+    
     // the first .then() for handling when my conversion call is successful
-
+    
     function appRequests() {
+        let myConverterPromise = CurrencyConvertService.convertCurrencytToNaira();
+        
         myConverterPromise.then((currencyConvertSuccess) => {
-            console.log(currencyConvertSuccess);
+            // console.log(currencyConvertSuccess);
 
 
             // parsing the json I get so I can be able to access them like a javaScript object
             const myConverterResponse = JSON.parse(currencyConvertSuccess);
 
-            console.log(myConverterResponse);
+            // console.log(myConverterResponse);
 
             // getting how much 1 dollar equals 1 naira
 
@@ -283,6 +282,9 @@ $(document).ready(function () {
         getMeCoinsRequest.then((getCoin) => {
             // parsing the json once again this time for when I've been granted the stocks I querried for
             const myCoinRequest = JSON.parse(getCoin);
+
+            // not using this currency converter algorithm because Promises couldn't work with it 
+            // in version 1.2.0(where I used a new ES6 technology called fetch) I will be making use of this algorithm
 
             // naijaRate = myConverterResponse.rates.NGN;
 
@@ -333,7 +335,10 @@ $(document).ready(function () {
 
 
 
-    // working with the search feature
+    // working with the search feature; All you have to do is input
+    // the 3 ticker symbol for that crypto and get updates on it(ticker symbol examples: btc, eth, xrp)
+    // in ths feature you can also search by name but it is advisable to use only ticker symbols for searching
+
 
     $("form.searching").submit( function(event){
         event.preventDefault();
@@ -343,7 +348,7 @@ $(document).ready(function () {
         let mySearchPromise = SearchFeature.searchMeCrypto(userSearch);
 
         mySearchPromise.then( (searchPassed) =>{
-            console.log(searchPassed);
+            // console.log(searchPassed);
 
             // parsing the  json got so I can be able to accss it as normal javascript
             const mySearchResponse = JSON.parse(searchPassed);

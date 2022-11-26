@@ -1,6 +1,7 @@
 // the business logic file of my application
 
-
+// stay tuned for updates on this application, I was not able to get prices in my local cureency naira with promises but in 
+// version 1.2.0(where I used fetch) I will be making use of this static function
 export class CurrencyConvertService {
     static convertCurrencytToNaira() {
 
@@ -15,7 +16,7 @@ export class CurrencyConvertService {
             // using a new propery called .onload to determine tell javascript when my response will be ready
 
             convertToNairaRequest.onload = function () {
-                console.log(this.readyState);
+                // console.log(this.readyState);
 
                 if (this.status === 200) {
                     // if the api call promise is a success, get me the response property and if it is a failure, do the same thing for me
@@ -81,7 +82,7 @@ export class SearchFeature{
             // using a new propery called .onload to determine tell javascript when my response will be ready
 
             searchRequest.onload = function () {
-                console.log(this.readyState);
+                // console.log(this.readyState);
 
                 if (this.status === 200) {
                     // if the api call promise is a success, get me the response property and if it is a failure, do the same thing for me

@@ -2,37 +2,37 @@
 
 // stay tuned for updates on this application, I was not able to get prices in my local cureency naira with promises but in 
 // version 1.2.0(where I used fetch) I will be making use of this static function
-export class CurrencyConvertService {
-    static convertCurrencytToNaira() {
+// export class CurrencyConvertService {
+//     static convertCurrencytToNaira() {
 
-        // returning a promise this time around and not storing me promise in a variable
-        return new Promise((promiseSucess, promiseReject) => {
+//         // returning a promise this time around and not storing me promise in a variable
+//         return new Promise((promiseSucess, promiseReject) => {
 
-            // reinstantiating my xmlHttpRequest object in my return block
+//             // reinstantiating my xmlHttpRequest object in my return block
 
-            let convertToNairaRequest = new XMLHttpRequest();
-            let conversionUrl = `https://openexchangerates.org/api/latest.json?app_id=${process.env.API_KEY}&symbols=ngn&prettyprint=false&show_alternative=false`;
+//             let convertToNairaRequest = new XMLHttpRequest();
+//             let conversionUrl = `https://openexchangerates.org/api/latest.json?app_id=${process.env.API_KEY}&symbols=ngn&prettyprint=false&show_alternative=false`;
 
-            // using a new propery called .onload to determine tell javascript when my response will be ready
+//             // using a new propery called .onload to determine tell javascript when my response will be ready
 
-            convertToNairaRequest.onload = function () {
-                // console.log(this.readyState);
+//             convertToNairaRequest.onload = function () {
+//                 // console.log(this.readyState);
 
-                if (this.status === 200) {
-                    // if the api call promise is a success, get me the response property and if it is a failure, do the same thing for me
-                    promiseSucess(convertToNairaRequest.response);
+//                 if (this.status === 200) {
+//                     // if the api call promise is a success, get me the response property and if it is a failure, do the same thing for me
+//                     promiseSucess(convertToNairaRequest.response);
 
-                }
-                else {
-                    promiseReject(convertToNairaRequest.response);
-                }
-            }
+//                 }
+//                 else {
+//                     promiseReject(convertToNairaRequest.response);
+//                 }
+//             }
 
-            convertToNairaRequest.open("GET", conversionUrl, true);
-            convertToNairaRequest.send();
-        });
-    }
-}
+//             convertToNairaRequest.open("GET", conversionUrl, true);
+//             convertToNairaRequest.send();
+//         });
+//     }
+// }
 
 export class CryptoService {
     static getAllCoins() {

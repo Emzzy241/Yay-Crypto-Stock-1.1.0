@@ -242,38 +242,38 @@ $(document).ready(function () {
     
     
     // the first .then() for handling when my conversion call is successful
-    
-    function appRequests() {
-        let myConverterPromise = CurrencyConvertService.convertCurrencytToNaira();
+    // not using this function now until the version 1.2.0
+
+        // let myConverterPromise = CurrencyConvertService.convertCurrencytToNaira();
         
-        myConverterPromise.then((currencyConvertSuccess) => {
-            // console.log(currencyConvertSuccess);
+        // myConverterPromise.then((currencyConvertSuccess) => {
+        //     // console.log(currencyConvertSuccess);
 
 
-            // parsing the json I get so I can be able to access them like a javaScript object
-            const myConverterResponse = JSON.parse(currencyConvertSuccess);
+        //     // parsing the json I get so I can be able to access them like a javaScript object
+        //     const myConverterResponse = JSON.parse(currencyConvertSuccess);
 
-            // console.log(myConverterResponse);
+        //     // console.log(myConverterResponse);
 
-            // getting how much 1 dollar equals 1 naira
+        //     // getting how much 1 dollar equals 1 naira
 
-            let naijaRate = myConverterResponse.rates.NGN;
-
-
-
-        },
-            // the callbacks that run when my promise gets rejected
-            (currencyConvertFailed) => {
-                $(".apiCall-btctoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
-                $(".apiCall-ethToNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
-                $(".apiCall-BnctoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
-                $(".apiCall-tethToNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
-                $(".apiCall-rippletoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
-            }
-        );
+        //     let naijaRate = myConverterResponse.rates.NGN;
 
 
-        // where I made use of the static method on my class in the app-service.js
+
+        // },
+        //     // the callbacks that run when my promise gets rejected
+        //     (currencyConvertFailed) => {
+        //         $(".apiCall-btctoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
+        //         $(".apiCall-ethToNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
+        //         $(".apiCall-BnctoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
+        //         $(".apiCall-tethToNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
+        //         $(".apiCall-rippletoNaira").text(`There was an error processing your request ${currencyConvertFailed}`);
+        //     }
+        // );
+
+
+        // // where I made use of the static method on my class in the app-service.js
         let getMeCoinsRequest = CryptoService.getAllCoins();
 
 
@@ -330,8 +330,6 @@ $(document).ready(function () {
             // $(".apiCall-dgCointoNaira").text(`₦${dogeToNaira}`);
 
         });
-    }
-    appRequests();
 
 
 

@@ -342,6 +342,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         let userSearch = $("#cryp").val();
+        // clearing out the input fields to allow users to input another ticker symbol
+        $("#cryp").val("");
 
         let mySearchPromise = SearchFeature.searchMeCrypto(userSearch);
 

@@ -12,7 +12,6 @@
 * jQuery
 * JSON
 * Coingecko Endpoint
-* OpenExchange Api and Key
 
 ## Description
 _In this great application you see live data about the financial world; ranging from prices of crypto's, market caps, volume traded and so more in a way that wouldkeep users relaxed _

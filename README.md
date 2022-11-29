@@ -23,7 +23,7 @@ _In this great application you see live data about the financial world; ranging 
 * Note: You have to create an environmental variable(.env file)for storing your api keys
 * For the Api call for coins, no apikey is required Go to the (https://www.coingecko.com/en/api/documentation) website, and just be sure you create a developer account 
 * For the second api call which is for converting dollar to naira: YOu would be needing a key here. Go to the (openexchangerates.org) website, create a developer account, get you api key, protect your api key with a .env file
-* Still for the 2nd api: The name you gave to the variable storing your apikey in your .env file shpuld overwrite mine
+* Still for the 2nd api: The name you gave to the variable storing your apikey in your .env file should overwrite mine
 (just do ${process.env.YOUR_API_KEY_NAME})
 * NOTE: in version 1.1.0 which is this(the promise version) I did not make use of my apikey from (openexchangerates.org) website. See version 1.2.0(the fetch version) which is coming out soon to know how this feature was implemented
 

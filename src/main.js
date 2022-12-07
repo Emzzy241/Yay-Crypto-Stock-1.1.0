@@ -85,6 +85,15 @@ import jsBadgeImg from "./assets/images/js-badge.svg";
 
 
 
+// a function to clear the fields when user searches for crypto
+function clearSearchFields() {
+    $("#cryp").val("");
+    $(".content-name").text("");
+    $(".content-id").text("");
+    $(".content-marketcapRank").text("");
+    $(".content-symbol").text("");
+}
+
 
 
 
@@ -342,8 +351,9 @@ $(document).ready(function () {
         event.preventDefault();
 
         let userSearch = $("#cryp").val();
-        // clearing out the input fields to allow users to input another ticker symbol
-        $("#cryp").val("");
+        
+        // calling the function that clears out the fields
+        clearSearchFields();
 
         let mySearchPromise = SearchFeature.searchMeCrypto(userSearch);
 
